@@ -1,4 +1,3 @@
-import React from 'react';
 
 interface SummaryProps {
   summary: string | null;
