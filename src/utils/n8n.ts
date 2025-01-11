@@ -1,4 +1,5 @@
 const N8N_WEBHOOK_URL = import.meta.env.VITE_N8N_WEBHOOK_URL;
+//https://talented-absolutely-bream.ngrok-free.app/webhook/ytube
 console.log('Environment variables:', import.meta.env); // Debug all env vars
 
 export async function summarizeVideo(youtubeUrl: string): Promise<string> {
