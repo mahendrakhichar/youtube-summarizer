@@ -1,50 +1,63 @@
-# React + TypeScript + Vite
+# YouTube Video Summarizer
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+A powerful web application that generates concise summaries of YouTube videos using AI. Built with **MERN Stack** and integrated with **n8n workflows** for automation.
 
-Currently, two official plugins are available:
+---
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react/README.md) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+## 🎥 Key Highlights
 
-## Expanding the ESLint configuration
+✅ **AI-Powered Summarization** - Get quick and accurate video summaries.
+✅ **YouTube Integration** - Simply input a YouTube URL to extract insights.
+✅ **Fast & Efficient** - Summarization process is automated via n8n workflows.
+✅ **User-Friendly UI** - Sleek design with easy-to-use navigation.
+✅ **Built with MERN Stack** - Modern web technologies for seamless performance.
 
-If you are developing a production application, we recommend updating the configuration to enable type aware lint rules:
+---
 
-- Configure the top-level `parserOptions` property like this:
+## 🚀 How It Works
 
-```js
-export default tseslint.config({
-  languageOptions: {
-    // other options...
-    parserOptions: {
-      project: ['./tsconfig.node.json', './tsconfig.app.json'],
-      tsconfigRootDir: import.meta.dirname,
-    },
-  },
-})
+1️⃣ Enter the YouTube video link.
+2️⃣ AI processes the video and extracts key points.
+3️⃣ Get a concise summary with timestamps.
+
+---
+
+## 💻 Tech Stack
+
+- **Frontend:** React.js + Tailwind CSS + Lucide Icons
+- **Backend:** Node.js + Express.js + MongoDB
+- **Automation:** n8n for workflow execution
+- **API Integration:** YouTube API for fetching video metadata
+
+---
+
+## 🛠️ Setup Instructions
+
+1️⃣ Clone the repository:
+```bash
+git clone https://github.com/mahendrakhichar/youtube-summarizer/
 ```
-
-- Replace `tseslint.configs.recommended` to `tseslint.configs.recommendedTypeChecked` or `tseslint.configs.strictTypeChecked`
-- Optionally add `...tseslint.configs.stylisticTypeChecked`
-- Install [eslint-plugin-react](https://github.com/jsx-eslint/eslint-plugin-react) and update the config:
-
-```js
-// eslint.config.js
-import react from 'eslint-plugin-react'
-
-export default tseslint.config({
-  // Set the react version
-  settings: { react: { version: '18.3' } },
-  plugins: {
-    // Add the react plugin
-    react,
-  },
-  rules: {
-    // other rules...
-    // Enable its recommended rules
-    ...react.configs.recommended.rules,
-    ...react.configs['jsx-runtime'].rules,
-  },
-})
+2️⃣ Install dependencies:
+```bash
+npm install
 ```
+3️⃣ Start the development server:
+```bash
+npm run dev
+```
+4️⃣ Deploy using Netlify/Vercel for frontend & Render for backend.
+
+---
+
+## 🔥 Future Enhancements
+
+🚀 Add multi-language support.
+🚀 Implement speech-to-text AI for improved accuracy.
+🚀 Enhance UI/UX for better user experience.
+
+---
+
+## 📌 Author
+
+Created with ❤️ by [Mahendra khichar]
+
